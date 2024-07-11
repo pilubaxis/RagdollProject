@@ -1,0 +1,10 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="PlayerBehaviour">
+			<method name="OnHit"/>
+		</type>
+		<type fullname="PlayerMovement">
+			<method name="OnMove"/>
+		</type>
+	</assembly>
+</linker>
