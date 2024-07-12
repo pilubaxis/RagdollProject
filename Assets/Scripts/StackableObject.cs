@@ -8,6 +8,8 @@ public class StackableObject : MonoBehaviour
 {
     public StackableObjectState state = StackableObjectState.AvaiableToStack;
     public Transform objectTransform = null;
+    public Rigidbody rigidBody { get { return objectTransform.GetComponent<Rigidbody>();  } }
+
     [SerializeField] private float lerpSpeedGoToStack = 4f;
 
     [Header("Conditions To Stack")]
@@ -20,6 +22,7 @@ public class StackableObject : MonoBehaviour
     [SerializeField] private Vector3 rotationOffset;
 
     public UnityAction doWhenStack = null;
+    public UnityAction doWhenThrow = null;
 
     protected Rigidbody rb = null;
 
@@ -42,8 +45,6 @@ public class StackableObject : MonoBehaviour
 
     public void Update()
     {
-        //if (player.GetComponent<StackObjectsManager>().)
-
         //when objects is waiting to be collected
         if (state == StackableObjectState.AvaiableToStack)
         {
@@ -54,16 +55,9 @@ public class StackableObject : MonoBehaviour
                 if (timer >= timeToStack)
                 {
                     //Adding to stack
-                    if (doWhenStack!= null)
-                    {
-                        doWhenStack.Invoke();
-                    }
-
+                    WhenStack();
                     //Player ref
                     player.GetComponent<StackObjectsManager>().AddToStack(this);
-
-                    rb.isKinematic = true;
-                    state = StackableObjectState.Stacked;
                 }
             }
         }
@@ -71,6 +65,26 @@ public class StackableObject : MonoBehaviour
         {
             
         }
+    }
+
+    public void WhenStack()
+    {
+        if (doWhenStack != null)
+        {
+            doWhenStack.Invoke();
+        }
+        state = StackableObjectState.Stacked;
+        rb.isKinematic = true;
+    }
+
+    public void WhenThrow()
+    {
+        if (doWhenThrow != null)
+        {
+            doWhenThrow.Invoke();
+        }
+        state = StackableObjectState.Thrown;
+        rb.isKinematic = false;
     }
 
     public void UpdateStackObjectPosition(Vector3 targetPos, float lerpDelay)

@@ -295,6 +295,7 @@ UnityEngine.CubemapArray::get_isReadable_Injected
 UnityEngine.Cursor::SetCursor_Injected
 UnityEngine.Cursor::get_lockState
 UnityEngine.Debug::ExtractStackTraceNoAlloc
+UnityEngine.Debug::DrawLine_Injected
 UnityEngine.DebugLogHandler::Internal_LogException_Injected
 UnityEngine.DebugLogHandler::Internal_Log_Injected
 UnityEngine.Display::RelativeMouseAtImpl
@@ -507,6 +508,7 @@ UnityEngine.Light::get_color_Injected
 UnityEngine.Light::get_shadows_Injected
 UnityEngine.Light::get_type_Injected
 UnityEngine.Light::get_cookie_Injected
+UnityEngine.LineRenderer::SetPosition_Injected
 UnityEngine.Material::HasProperty_Injected
 UnityEngine.Material::SetPass_Injected
 UnityEngine.Material::ComputeCRC_Injected
@@ -624,6 +626,7 @@ UnityEngine.QualitySettings::get_activeColorSpace
 UnityEngine.Quaternion::AngleAxis_Injected
 UnityEngine.Quaternion::Internal_FromEulerRad_Injected
 UnityEngine.Quaternion::Inverse_Injected
+UnityEngine.Quaternion::Lerp_Injected
 UnityEngine.Quaternion::LookRotation_Injected
 UnityEngine.Quaternion::Slerp_Injected
 UnityEngine.RectOffset::get_bottom
@@ -682,7 +685,11 @@ UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
 UnityEngine.ResourcesAPIInternal::FindShaderByName
 UnityEngine.Rigidbody::AddForce_Injected
 UnityEngine.Rigidbody::MovePosition_Injected
+UnityEngine.Rigidbody::MoveRotation_Injected
 UnityEngine.Rigidbody::get_position_Injected
+UnityEngine.Rigidbody::get_rotation_Injected
+UnityEngine.Rigidbody::set_isKinematic_Injected
+UnityEngine.Rigidbody::set_useGravity_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width

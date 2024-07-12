@@ -6,5 +6,8 @@
 		<type fullname="PlayerMovement">
 			<method name="OnMove"/>
 		</type>
+		<type fullname="PlayerThrow">
+			<method name="OnThrow"/>
+		</type>
 	</assembly>
 </linker>

@@ -370,6 +370,7 @@
 "Assets/Scripts/EnemyRagdoll.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Hit.cs"
+"Assets/Scripts/Player/PlayerThrow.cs"
 "Assets/Scripts/PlayerBehaviour.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/RagdollStackableObject.cs"

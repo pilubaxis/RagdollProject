@@ -40,6 +40,11 @@ public class StackObjectsManager : MonoBehaviour
 
 
     #region STACK OBJECTS
+
+    public bool CheckStackIsEmpty()
+    {
+        return stackObjects.Count == 0;
+    }
     public void AddToStack(StackableObject obj)
     {
         stackObjects.Push(obj);
@@ -47,7 +52,14 @@ public class StackObjectsManager : MonoBehaviour
 
     public StackableObject RemoveFromStack()
     {
-        return stackObjects.Pop();
+        StackableObject obj = stackObjects.Pop();
+        obj.state = StackableObject.StackableObjectState.Thrown;
+        return obj;
+    }
+
+    public StackableObject CheckNextFromStack()
+    {
+        return stackObjects.Peek();
     }
 
     public void MoveStackObjects()

@@ -319,9 +319,14 @@
 "Assets/Scripts/CameraMovement.cs"
 "Assets/Scripts/CharacterBehaviour.cs"
 "Assets/Scripts/EnemyRagdoll.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Hit.cs"
+"Assets/Scripts/Player/PlayerThrow.cs"
 "Assets/Scripts/PlayerBehaviour.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/RagdollStackableObject.cs"
+"Assets/Scripts/StackableObject.cs"
+"Assets/Scripts/StackObjectsManager.cs"
 -langversion:9.0
 
 /deterministic

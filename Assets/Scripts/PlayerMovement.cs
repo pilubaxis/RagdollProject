@@ -24,6 +24,10 @@ public class PlayerMovement : MonoBehaviour
         get { return moveInput.magnitude > 0; }
     }
 
+    public Vector3 playerDirection {
+        get { return modelTransform.transform.forward; }
+    }
+
 
     private void Awake()
     {

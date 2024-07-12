@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 38146301562682843}
   - component: {fileID: 4526933344885419406}
   - component: {fileID: 4842408644651400966}
+  - component: {fileID: 8481938889604618958}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -175,6 +176,26 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 1c131946-8099-49c9-a2b0-49fc14efb3c6
     m_ActionName: 'Normal/Hit[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8481938889604618958}
+        m_TargetAssemblyTypeName: PlayerThrow, Assembly-CSharp
+        m_MethodName: OnThrow
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 008f317d-acd6-4b07-964b-dadc09d996c9
+    m_ActionName: 'Normal/Throw[/Keyboard/shift]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cf0caf1f-6ae8-43cf-8ce6-62e99a895727
+    m_ActionName: 1/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Normal
@@ -248,9 +269,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6963ec94422687b4886b3e769ae65a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.3
+  lerpSpeedPos: 0.1
+  lerpSpeedRot: 5
   yOffset: 1.5
   stackTransform: {fileID: 2182630147948994773}
+--- !u!114 &8481938889604618958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65845441062569184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d218d6f93a2e29548afadbdb751b45e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minForceMagnitude: 0.2
+  maxForceMagnitude: 15
+  forceIncreaseRate: 2
+  yIncrease: 0.5
+  forceLine: {fileID: 0}
 --- !u!1 &137559766199252943
 GameObject:
   m_ObjectHideFlags: 0

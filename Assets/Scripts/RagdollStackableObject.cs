@@ -20,7 +20,11 @@ public class RagdollStackableObject : StackableObject
 
         // Apply the rotation
         //rb.transform.Rotate(new Vector3(-90, 0, 0));
-        DisableChildRigidbodies();
+        //DisableChildRigidbodies();
+    }
+    public void DoOnThrow()
+    {
+        rb.useGravity = true;
     }
 
     private void DisableChildRigidbodies()
