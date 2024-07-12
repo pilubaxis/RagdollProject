@@ -11,6 +11,7 @@ public class PlayerThrow : MonoBehaviour
     [SerializeField] private float forceIncreaseRate = 1f;
     [SerializeField] private float yIncrease = 1f;
     [SerializeField] private LineRenderer forceLine = null;
+    [SerializeField] private float rotationImpulseIntensity = 4f;
 
     private float currentForceMagnitude;
     private bool isIncreasingForce = false;
@@ -87,5 +88,14 @@ public class PlayerThrow : MonoBehaviour
     public void ExecuteThrow(Rigidbody rb)
     {
         rb.AddForce(forceDirection * currentForceMagnitude, ForceMode.Impulse);
+
+        //Random rot inpulse (unique throw)
+        Vector3 randomRotationImpulse = new Vector3(
+        Random.Range(-1f, 1f),
+        Random.Range(-1f, 1f),
+        Random.Range(-1f, 1f)
+    ) * rotationImpulseIntensity;
+
+        rb.AddTorque(randomRotationImpulse, ForceMode.Impulse);
     }
 }

@@ -1,14 +1,15 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="BodyContainer" preserve="nothing"/>
 		<type fullname="CameraMovement" preserve="nothing"/>
 		<type fullname="EnemyRagdoll" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>
 		<type fullname="Hit" preserve="nothing"/>
 		<type fullname="PlayerBehaviour" preserve="nothing"/>
+		<type fullname="PlayerEconomy" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
 		<type fullname="PlayerThrow" preserve="nothing"/>
 		<type fullname="RagdollStackableObject" preserve="nothing"/>
-		<type fullname="StackableObject" preserve="nothing"/>
 		<type fullname="StackObjectsManager" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
@@ -19,6 +20,13 @@
 		<type fullname="UnityEngine.InputSystem.OnScreen.OnScreenStick" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.PlayerInput" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.RemoteInputPlayerConnection" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Unity.TextMeshPro">
+		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
+		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
+		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
+		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
+		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEditor.Animations.AnimatorController" preserve="nothing"/>
@@ -47,6 +55,7 @@
 		<type fullname="UnityEngine.Collider" preserve="nothing"/>
 		<type fullname="UnityEngine.Component" preserve="nothing"/>
 		<type fullname="UnityEngine.Cubemap" preserve="nothing"/>
+		<type fullname="UnityEngine.Font" preserve="nothing"/>
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
 		<type fullname="UnityEngine.Joint" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
@@ -82,6 +91,7 @@
 		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.GridLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
 	</assembly>
 </linker>

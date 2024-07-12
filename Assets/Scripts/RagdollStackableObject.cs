@@ -10,6 +10,7 @@ public class RagdollStackableObject : StackableObject
     {
         base.Start();
         doWhenStack += DoOnStack;
+        
     }
 
     public void DoOnStack()

@@ -8,11 +8,26 @@ public class CameraMovement : MonoBehaviour
     public Transform player;
     public float smoothSpeed = 0.125f; 
     public float rotationSpeed = 5.0f;
+    [Range(0,1)]public float zoom = 1f;
+    [SerializeField] private float zoomIntensity = 1f;
 
     public Vector2 deadZoneSize = new Vector2(2f, 2f);
 
     private Vector3 currentVelocity;
     private Vector3 targetPosition;
+    private Vector3 cameraLocalPos;
+    private Camera camera;
+
+    private void Start()
+    {
+        camera = GetComponentInChildren<Camera>();
+        cameraLocalPos = camera.transform.localPosition;
+    }
+
+    private void Update()
+    {
+        ZoomIn(zoom, zoomIntensity);
+    }
 
     private void LateUpdate()
     {
@@ -31,6 +46,17 @@ public class CameraMovement : MonoBehaviour
             Vector3 smoothedPosition = Vector3.SmoothDamp(transform.position, targetPosition, ref currentVelocity, smoothSpeed);
             transform.position = smoothedPosition;
         }
+    }
+
+    public void ZoomIn(float percentage, float zoomIntensity)
+    {
+        percentage = Mathf.Clamp01(percentage);
+
+        Vector3 dir = camera.transform.localPosition.normalized;
+
+        Vector3 newLocalPos = cameraLocalPos + dir * percentage * zoomIntensity;
+
+        camera.transform.localPosition = newLocalPos;
     }
 
     private void OnDrawGizmos()

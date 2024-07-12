@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class StackableObject : MonoBehaviour
 {
-    public StackableObjectState state = StackableObjectState.AvaiableToStack;
+    public StackableObjectState state = StackableObjectState.Available;
     public Transform objectTransform = null;
     public Rigidbody rigidBody { get { return objectTransform.GetComponent<Rigidbody>();  } }
 
@@ -16,17 +16,22 @@ public class StackableObject : MonoBehaviour
     // The range that the object needs to stack in player
     [SerializeField] private float playerDistanceToStack = 1.5f;
 
-    //The running time that the player needs to stay in range, to collect the stackable object
+    //The period of time that the player needs to stay in range to stack 
     [SerializeField] private float timeToStack = 1f;
+
+    // the period of time that the objects need to be available again
+    [SerializeField] private float timeToBeAvailable = 2f;
 
     [SerializeField] private Vector3 rotationOffset;
 
     public UnityAction doWhenStack = null;
     public UnityAction doWhenThrow = null;
+    public UnityAction doWhenDisposed = null;
 
     protected Rigidbody rb = null;
 
-    private float timer = 0;
+    private float timerAvailable = 0;
+    private float timerThrown = 0;
     private Transform player = null;
     protected void Start()
     {
@@ -46,24 +51,35 @@ public class StackableObject : MonoBehaviour
     public void Update()
     {
         //when objects is waiting to be collected
-        if (state == StackableObjectState.AvaiableToStack)
+        switch (state)
         {
-            if (GetDistanceFromPlayer() <= playerDistanceToStack)
-            {
-                timer += Time.deltaTime;
-
-                if (timer >= timeToStack)
+            case StackableObjectState.Available:
+                if (GetDistanceFromPlayer() <= playerDistanceToStack)
                 {
-                    //Adding to stack
-                    WhenStack();
-                    //Player ref
-                    player.GetComponent<StackObjectsManager>().AddToStack(this);
+                    timerAvailable += Time.deltaTime;
+
+                    if (timerAvailable >= timeToStack)
+                    {
+                        //Adding to stack
+                        WhenStack();
+                        //Player ref
+                        player.GetComponent<StackObjectsManager>().AddToStack(this);
+                    }
                 }
-            }
-        }
-        else if (state == StackableObjectState.Stacked)
-        {
-            
+                break;
+            case StackableObjectState.Unavailable:
+                break;
+            case StackableObjectState.Stacked:
+                break;
+            case StackableObjectState.Thrown:
+
+                timerThrown += Time.deltaTime;
+
+                if (timerThrown >= timeToStack)
+                {
+                    WhenAvailable();
+                }
+                break;
         }
     }
 
@@ -75,6 +91,7 @@ public class StackableObject : MonoBehaviour
         }
         state = StackableObjectState.Stacked;
         rb.isKinematic = true;
+        timerAvailable = 0;
     }
 
     public void WhenThrow()
@@ -85,6 +102,22 @@ public class StackableObject : MonoBehaviour
         }
         state = StackableObjectState.Thrown;
         rb.isKinematic = false;
+    }
+
+    public void WhenDisposed(int money)
+    {
+        if (doWhenDisposed!= null)
+        {
+            doWhenDisposed.Invoke();
+        }
+        state = StackableObjectState.Disposed;
+        player.GetComponent<PlayerEconomy>().AddCoin(money);
+    }
+
+    public void WhenAvailable()
+    {
+        state = StackableObjectState.Available;
+        timerThrown = 0;
     }
 
     public void UpdateStackObjectPosition(Vector3 targetPos, float lerpDelay)
@@ -124,14 +157,16 @@ public class StackableObject : MonoBehaviour
 
     public void ResetObject()
     {
-        timer = 0;
+        timerAvailable = 0;
     }
 
 
     public enum StackableObjectState
     {
-        AvaiableToStack,
+        Unavailable,
+        Available,
         Stacked,
-        Thrown
+        Thrown,
+        Disposed
     }
 }

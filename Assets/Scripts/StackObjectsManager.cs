@@ -80,8 +80,8 @@ public class StackObjectsManager : MonoBehaviour
             if (lastObj != null)
             {
                 Vector3 dir = (lastObj.objectTransform.position - obj.objectTransform.position).normalized;
-                obj.UpdateStackObjectRotation(dir, lerpSpeedRot);
-                Debug.Log("HELP: " + dir);
+                //obj.UpdateStackObjectRotation(dir, lerpSpeedRot);
+                obj.UpdateStackObjectRotation(Vector3.down, lerpSpeedRot);
             }
             else
             {

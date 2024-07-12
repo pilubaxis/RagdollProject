@@ -7,7 +7,13 @@
 
 
 
+extern void BodyContainer_Start_m3B933C416598B1FA714FAAD9A4AA065B3BD0F9C0 (void);
+extern void BodyContainer_OnTriggerEnter_m982112689C1A88331DC967ABD04652807579565B (void);
+extern void BodyContainer__ctor_mB91DA48F2270805189063A9D60AE9E577CAA2581 (void);
+extern void CameraMovement_Start_mBBF1258D871D26851766FE3CA23546A9F7BF2629 (void);
+extern void CameraMovement_Update_m42273F0005E91309F6A375EB990391D92F6727FE (void);
 extern void CameraMovement_LateUpdate_m0E6EE8E6C2BAE82CAEB668B7BF6A22898575FCAC (void);
+extern void CameraMovement_ZoomIn_mEAF83C5E538CF2E16F0A0138C2216236DEEA5B26 (void);
 extern void CameraMovement_OnDrawGizmos_mB029D7E209DC960620917675C53B8666C1E6DC22 (void);
 extern void CameraMovement__ctor_m89EBDC0905F17D37C7604387BED054FDCCADAFD3 (void);
 extern void CharacterBehaviour_Start_m62D414A4DE6A460C2DE788835FE9E39F05B2107F (void);
@@ -26,6 +32,8 @@ extern void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F (void);
 extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
 extern void Hit_OnTriggerEnter_m876587A7A0D5583F76D621A26AD9EE38CDD925A2 (void);
 extern void Hit__ctor_m9F1A3A85510230DC63EF91FEBC777689E078F4E5 (void);
+extern void PlayerEconomy_AddCoin_m211D47BD24449912A56686DBBA5B39FFBB979C70 (void);
+extern void PlayerEconomy__ctor_m0465E1602A805A6214F598882852772CB80269CE (void);
 extern void PlayerThrow_Start_m653A07358FB4101563BF2A1212DA654594E09AA3 (void);
 extern void PlayerThrow_Update_mCC97B23BA1D6E923A495222038B8351CA2488A9E (void);
 extern void PlayerThrow_IncreaseForceMagnitude_m32385DF4484370CDCCA3A8DDA256BD23B703FFB2 (void);
@@ -58,6 +66,8 @@ extern void StackableObject_Start_m7CD15A9C8493D13EDF450869F8C781A26B9E0FED (voi
 extern void StackableObject_Update_m8E7EBD4E96447A66FE1813CC92F075BBAEF4BB15 (void);
 extern void StackableObject_WhenStack_mD77ADD65BB610C026D46ED75010148D826EC560D (void);
 extern void StackableObject_WhenThrow_m3639AAE4223A92A7F72A7C7C57350FF32449D778 (void);
+extern void StackableObject_WhenDisposed_m6CE67157762E714A281A3126CB52FF50AC817BF3 (void);
+extern void StackableObject_WhenAvailable_mAAE782F15FE9452AB4D8269051AD3BB29A77834B (void);
 extern void StackableObject_UpdateStackObjectPosition_mB1980D4F79A9C31E4AC3E051EA8EADB6816A57A5 (void);
 extern void StackableObject_UpdateStackObjectRotation_mDF989FB7D3F7055090BC0BD1197E9779692A6CB3 (void);
 extern void StackableObject_GetDistanceFromPlayer_mEA666EA486C871A0AF5D755DD4B638EFC1C8BB82 (void);
@@ -74,9 +84,15 @@ extern void StackObjectsManager_GetTopOfStackPos_mA611527324AF598D8957429CAE142B
 extern void StackObjectsManager__ctor_m1504FB25BA0FEBAAC70887E25F8C43B724F0A2F5 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[67] = 
+static Il2CppMethodPointer s_methodPointers[77] = 
 {
+	BodyContainer_Start_m3B933C416598B1FA714FAAD9A4AA065B3BD0F9C0,
+	BodyContainer_OnTriggerEnter_m982112689C1A88331DC967ABD04652807579565B,
+	BodyContainer__ctor_mB91DA48F2270805189063A9D60AE9E577CAA2581,
+	CameraMovement_Start_mBBF1258D871D26851766FE3CA23546A9F7BF2629,
+	CameraMovement_Update_m42273F0005E91309F6A375EB990391D92F6727FE,
 	CameraMovement_LateUpdate_m0E6EE8E6C2BAE82CAEB668B7BF6A22898575FCAC,
+	CameraMovement_ZoomIn_mEAF83C5E538CF2E16F0A0138C2216236DEEA5B26,
 	CameraMovement_OnDrawGizmos_mB029D7E209DC960620917675C53B8666C1E6DC22,
 	CameraMovement__ctor_m89EBDC0905F17D37C7604387BED054FDCCADAFD3,
 	CharacterBehaviour_Start_m62D414A4DE6A460C2DE788835FE9E39F05B2107F,
@@ -95,6 +111,8 @@ static Il2CppMethodPointer s_methodPointers[67] =
 	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
 	Hit_OnTriggerEnter_m876587A7A0D5583F76D621A26AD9EE38CDD925A2,
 	Hit__ctor_m9F1A3A85510230DC63EF91FEBC777689E078F4E5,
+	PlayerEconomy_AddCoin_m211D47BD24449912A56686DBBA5B39FFBB979C70,
+	PlayerEconomy__ctor_m0465E1602A805A6214F598882852772CB80269CE,
 	PlayerThrow_Start_m653A07358FB4101563BF2A1212DA654594E09AA3,
 	PlayerThrow_Update_mCC97B23BA1D6E923A495222038B8351CA2488A9E,
 	PlayerThrow_IncreaseForceMagnitude_m32385DF4484370CDCCA3A8DDA256BD23B703FFB2,
@@ -127,6 +145,8 @@ static Il2CppMethodPointer s_methodPointers[67] =
 	StackableObject_Update_m8E7EBD4E96447A66FE1813CC92F075BBAEF4BB15,
 	StackableObject_WhenStack_mD77ADD65BB610C026D46ED75010148D826EC560D,
 	StackableObject_WhenThrow_m3639AAE4223A92A7F72A7C7C57350FF32449D778,
+	StackableObject_WhenDisposed_m6CE67157762E714A281A3126CB52FF50AC817BF3,
+	StackableObject_WhenAvailable_mAAE782F15FE9452AB4D8269051AD3BB29A77834B,
 	StackableObject_UpdateStackObjectPosition_mB1980D4F79A9C31E4AC3E051EA8EADB6816A57A5,
 	StackableObject_UpdateStackObjectRotation_mDF989FB7D3F7055090BC0BD1197E9779692A6CB3,
 	StackableObject_GetDistanceFromPlayer_mEA666EA486C871A0AF5D755DD4B638EFC1C8BB82,
@@ -144,81 +164,91 @@ static Il2CppMethodPointer s_methodPointers[67] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[67] = 
+static const int32_t s_InvokerIndices[77] = 
 {
-	5528,
-	5528,
-	5528,
-	5528,
-	5528,
-	4386,
-	4386,
-	5528,
-	5528,
-	5528,
-	5423,
-	5528,
-	5528,
-	1894,
-	5528,
-	5528,
-	5528,
-	4419,
-	5528,
-	5528,
-	5528,
-	5528,
-	5528,
-	4322,
-	4527,
-	4419,
-	5528,
-	5323,
-	5528,
-	5528,
-	5528,
-	5528,
-	5528,
-	4527,
-	5528,
-	5323,
-	5520,
-	5528,
-	4527,
-	5528,
-	5528,
-	5528,
-	5528,
-	5528,
-	5528,
-	5528,
-	5423,
-	5528,
-	5528,
-	5528,
-	5528,
-	2422,
-	2422,
-	5465,
-	5528,
-	5528,
-	5528,
-	5528,
-	5323,
-	4419,
-	5423,
-	5423,
-	5528,
-	5520,
-	5528,
-	8295,
-	5528,
+	5765,
+	4599,
+	5765,
+	5765,
+	5765,
+	5765,
+	2462,
+	5765,
+	5765,
+	5765,
+	5765,
+	4565,
+	4565,
+	5765,
+	5765,
+	5765,
+	5649,
+	5765,
+	5765,
+	1940,
+	5765,
+	5765,
+	5765,
+	4599,
+	5765,
+	4565,
+	5765,
+	5765,
+	5765,
+	5765,
+	5765,
+	4494,
+	4719,
+	4599,
+	5765,
+	5545,
+	5765,
+	5765,
+	5765,
+	5765,
+	5765,
+	4719,
+	5765,
+	5545,
+	5756,
+	5765,
+	4719,
+	5765,
+	5765,
+	5765,
+	5765,
+	5765,
+	5765,
+	5765,
+	5649,
+	5765,
+	5765,
+	5765,
+	5765,
+	4565,
+	5765,
+	2498,
+	2498,
+	5692,
+	5765,
+	5765,
+	5765,
+	5765,
+	5545,
+	4599,
+	5649,
+	5649,
+	5765,
+	5756,
+	5765,
+	8568,
+	5765,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	67,
+	77,
 	s_methodPointers,
 	0,
 	NULL,
