@@ -96,9 +96,9 @@ public class StackableObject : MonoBehaviour
     public void UpdateStackObjectRotation(Vector3 targetDirection, float lerpSpeedRot)
     {
         Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
-    targetRotation *= Quaternion.Euler(rotationOffset);
+        targetRotation *= Quaternion.Euler(rotationOffset);
 
-    Quaternion lerpedRotation = Quaternion.Lerp(rb.rotation, targetRotation, lerpSpeedRot * Time.deltaTime);
+        Quaternion lerpedRotation = Quaternion.Lerp(rb.rotation, targetRotation, lerpSpeedRot * Time.deltaTime);
 
     rb.MoveRotation(lerpedRotation);
     }
