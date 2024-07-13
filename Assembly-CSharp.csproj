@@ -59,15 +59,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\StackObjectsManager.cs" />
+    <Compile Include="Assets\Scripts\Effects\Billboard.cs" />
+    <Compile Include="Assets\Scripts\Shop\ShopUI.cs" />
     <Compile Include="Assets\Scripts\Hit.cs" />
     <Compile Include="Assets\Scripts\StackableObject.cs" />
     <Compile Include="Assets\Scripts\CharacterBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerUpgrader.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerEconomy.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\EnemyRagdoll.cs" />
+    <Compile Include="Assets\Scripts\Shop\ColorOptionUI.cs" />
     <Compile Include="Assets\Scripts\RagdollStackableObject.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Shop\ShopManager.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviour.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerThrow.cs" />
     <Compile Include="Assets\Scripts\BodyContainer.cs" />

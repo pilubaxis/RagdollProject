@@ -870,8 +870,7 @@
         860,
         861,
         862,
-        863,
-        864
+        863
       ],
       "DebugActionIndex": 0
     },
@@ -26449,27 +26448,6 @@
       "DebugActionIndex": 753
     },
     {
-      "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/icallsummary.txt",
-      "DisplayName": "Copying icallsummary.txt",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/Bee/artifacts/Android/ManagedStripped/icallsummary.txt"
-      ],
-      "InputFlags": [
-        0
-      ],
-      "Outputs": [
-        "C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/icallsummary.txt"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "ToBuildDependencies": [
-        8
-      ],
-      "DebugActionIndex": 754
-    },
-    {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Mono.Security.dll",
       "DisplayName": "Copying Mono.Security.dll",
       "ActionType": "CopyFiles",
@@ -26488,7 +26466,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 755
+      "DebugActionIndex": 754
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/mscorlib.dll",
@@ -26509,7 +26487,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 756
+      "DebugActionIndex": 755
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Configuration.dll",
@@ -26530,7 +26508,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 757
+      "DebugActionIndex": 756
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Core.dll",
@@ -26551,7 +26529,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 758
+      "DebugActionIndex": 757
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.dll",
@@ -26572,7 +26550,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 759
+      "DebugActionIndex": 758
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Xml.dll",
@@ -26593,7 +26571,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 760
+      "DebugActionIndex": 759
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.dll",
@@ -26614,7 +26592,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 761
+      "DebugActionIndex": 760
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.InputSystem.pdb",
@@ -26635,7 +26613,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 762
+      "DebugActionIndex": 761
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.dll",
@@ -26656,7 +26634,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 763
+      "DebugActionIndex": 762
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.pdb",
@@ -26677,7 +26655,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 764
+      "DebugActionIndex": 763
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -26698,7 +26676,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 765
+      "DebugActionIndex": 764
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.pdb",
@@ -26719,7 +26697,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 766
+      "DebugActionIndex": 765
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.dll",
@@ -26740,7 +26718,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 767
+      "DebugActionIndex": 766
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.pdb",
@@ -26761,7 +26739,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 768
+      "DebugActionIndex": 767
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.dll",
@@ -26782,7 +26760,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 769
+      "DebugActionIndex": 768
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.pdb",
@@ -26803,7 +26781,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 770
+      "DebugActionIndex": 769
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.dll",
@@ -26824,7 +26802,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 771
+      "DebugActionIndex": 770
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.pdb",
@@ -26845,7 +26823,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 772
+      "DebugActionIndex": 771
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.dll",
@@ -26866,7 +26844,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 773
+      "DebugActionIndex": 772
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.dll",
@@ -26887,7 +26865,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 774
+      "DebugActionIndex": 773
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.pdb",
@@ -26908,7 +26886,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 775
+      "DebugActionIndex": 774
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.dll",
@@ -26929,7 +26907,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 776
+      "DebugActionIndex": 775
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.pdb",
@@ -26950,7 +26928,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 777
+      "DebugActionIndex": 776
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.dll",
@@ -26971,7 +26949,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 778
+      "DebugActionIndex": 777
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.pdb",
@@ -26992,7 +26970,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 779
+      "DebugActionIndex": 778
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputModule.dll",
@@ -27013,7 +26991,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 780
+      "DebugActionIndex": 779
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputModule.pdb",
@@ -27034,7 +27012,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 781
+      "DebugActionIndex": 780
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -27055,7 +27033,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 782
+      "DebugActionIndex": 781
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.JSONSerializeModule.pdb",
@@ -27076,7 +27054,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 783
+      "DebugActionIndex": 782
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -27097,7 +27075,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 784
+      "DebugActionIndex": 783
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.ParticleSystemModule.pdb",
@@ -27118,7 +27096,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 785
+      "DebugActionIndex": 784
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.pdb",
@@ -27139,7 +27117,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 786
+      "DebugActionIndex": 785
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.dll",
@@ -27160,7 +27138,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 787
+      "DebugActionIndex": 786
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.pdb",
@@ -27181,7 +27159,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 788
+      "DebugActionIndex": 787
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.dll",
@@ -27202,7 +27180,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 789
+      "DebugActionIndex": 788
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.pdb",
@@ -27223,7 +27201,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 790
+      "DebugActionIndex": 789
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PropertiesModule.dll",
@@ -27244,7 +27222,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 791
+      "DebugActionIndex": 790
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PropertiesModule.pdb",
@@ -27265,7 +27243,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 792
+      "DebugActionIndex": 791
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -27286,7 +27264,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 793
+      "DebugActionIndex": 792
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.pdb",
@@ -27307,7 +27285,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 794
+      "DebugActionIndex": 793
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -27328,7 +27306,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 795
+      "DebugActionIndex": 794
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.pdb",
@@ -27349,7 +27327,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 796
+      "DebugActionIndex": 795
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SubsystemsModule.dll",
@@ -27370,7 +27348,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 797
+      "DebugActionIndex": 796
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SubsystemsModule.pdb",
@@ -27391,7 +27369,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 798
+      "DebugActionIndex": 797
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -27412,7 +27390,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 799
+      "DebugActionIndex": 798
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
@@ -27433,7 +27411,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 800
+      "DebugActionIndex": 799
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -27454,7 +27432,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 801
+      "DebugActionIndex": 800
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
@@ -27475,7 +27453,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 802
+      "DebugActionIndex": 801
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.dll",
@@ -27496,7 +27474,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 803
+      "DebugActionIndex": 802
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.pdb",
@@ -27517,7 +27495,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 804
+      "DebugActionIndex": 803
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.dll",
@@ -27538,7 +27516,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 805
+      "DebugActionIndex": 804
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.pdb",
@@ -27559,7 +27537,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 806
+      "DebugActionIndex": 805
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.dll",
@@ -27580,7 +27558,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 807
+      "DebugActionIndex": 806
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.pdb",
@@ -27601,7 +27579,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 808
+      "DebugActionIndex": 807
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.dll",
@@ -27622,7 +27600,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 809
+      "DebugActionIndex": 808
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.pdb",
@@ -27643,7 +27621,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 810
+      "DebugActionIndex": 809
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.dll",
@@ -27664,7 +27642,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 811
+      "DebugActionIndex": 810
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.pdb",
@@ -27685,7 +27663,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 812
+      "DebugActionIndex": 811
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.VRModule.dll",
@@ -27706,7 +27684,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 813
+      "DebugActionIndex": 812
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.VRModule.pdb",
@@ -27727,7 +27705,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 814
+      "DebugActionIndex": 813
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.XRModule.dll",
@@ -27748,7 +27726,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 815
+      "DebugActionIndex": 814
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.XRModule.pdb",
@@ -27769,7 +27747,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 816
+      "DebugActionIndex": 815
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityLinkerToEditorData.json",
@@ -27790,7 +27768,7 @@
       "ToBuildDependencies": [
         8
       ],
-      "DebugActionIndex": 817
+      "DebugActionIndex": 816
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity default resources",
@@ -27808,7 +27786,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 818
+      "DebugActionIndex": 817
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/IntermediateFiles.txt_ri9j.info",
@@ -27825,7 +27803,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 819
+      "DebugActionIndex": 818
     },
     {
       "Annotation": "ActionGenerateProjectFiles Library/Bee/artifacts/Android/IntermediateFiles.txt (+18 others)",
@@ -27906,11 +27884,11 @@
         0
       ],
       "ToBuildDependencies": [
-        819
+        818
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 820
+      "DebugActionIndex": 819
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/java/com/unity3d/player/UnityPlayerActivity.java",
@@ -27928,7 +27906,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 821
+      "DebugActionIndex": 820
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar",
@@ -27946,7 +27924,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 822
+      "DebugActionIndex": 821
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/IntermediateLauncherManifestDiag.txt_4oyd.info",
@@ -27963,7 +27941,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 823
+      "DebugActionIndex": 822
     },
     {
       "Annotation": "Generate Manifests Library/Bee/artifacts/Android/Manifest/IntermediateLauncherManifestDiag.txt (+3 others)",
@@ -28115,11 +28093,11 @@
         74,
         76,
         78,
-        823
+        822
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 824
+      "DebugActionIndex": 823
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/ids.xml",
@@ -28137,7 +28115,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 825
+      "DebugActionIndex": 824
     },
     {
       "Annotation": "WriteText C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v21/styles.xml",
@@ -28154,7 +28132,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 826
+      "DebugActionIndex": 825
     },
     {
       "Annotation": "WriteText C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v28/styles.xml",
@@ -28171,7 +28149,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 827
+      "DebugActionIndex": 826
     },
     {
       "Annotation": "WriteText C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v31/styles.xml",
@@ -28188,7 +28166,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 828
+      "DebugActionIndex": 827
     },
     {
       "Annotation": "WriteText C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/styles.xml",
@@ -28205,7 +28183,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 829
+      "DebugActionIndex": 828
     },
     {
       "Annotation": "WriteText C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/colors.xml",
@@ -28222,7 +28200,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 830
+      "DebugActionIndex": 829
     },
     {
       "Annotation": "WriteText C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/strings.xml",
@@ -28239,7 +28217,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 831
+      "DebugActionIndex": 830
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v30/freeformwindow.xml",
@@ -28257,7 +28235,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 832
+      "DebugActionIndex": 831
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/freeformwindow.xml",
@@ -28275,7 +28253,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 833
+      "DebugActionIndex": 832
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon.xml",
@@ -28293,7 +28271,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 834
+      "DebugActionIndex": 833
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon_round.xml",
@@ -28311,7 +28289,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 835
+      "DebugActionIndex": 834
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png",
@@ -28329,7 +28307,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 836
+      "DebugActionIndex": 835
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_background.png",
@@ -28347,7 +28325,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 837
+      "DebugActionIndex": 836
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
@@ -28365,7 +28343,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 838
+      "DebugActionIndex": 837
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/available.tflite",
@@ -28383,7 +28361,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 839
+      "DebugActionIndex": 838
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/available_features.json",
@@ -28401,7 +28379,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 840
+      "DebugActionIndex": 839
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/oom.tflite",
@@ -28419,7 +28397,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 841
+      "DebugActionIndex": 840
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/oom_features.json",
@@ -28437,7 +28415,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 842
+      "DebugActionIndex": 841
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/realtime.tflite",
@@ -28455,7 +28433,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 843
+      "DebugActionIndex": 842
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/realtime_features.json",
@@ -28473,7 +28451,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 844
+      "DebugActionIndex": 843
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libmain.so",
@@ -28491,7 +28469,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 845
+      "DebugActionIndex": 844
     },
     {
       "Annotation": "SourceBuildPlayerFiles",
@@ -28501,10 +28479,10 @@
       "Outputs": [],
       "OutputFlags": [],
       "ToBuildDependencies": [
-        845,
-        856
+        844,
+        855
       ],
-      "DebugActionIndex": 846
+      "DebugActionIndex": 845
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityClassRegistration.cpp_bjq6.info",
@@ -28521,7 +28499,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 847
+      "DebugActionIndex": 846
     },
     {
       "Annotation": "ClassRegistrationGenerator C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/artifacts/Android/il2cppOutput/UnityClassRegistration.cpp",
@@ -28617,11 +28595,11 @@
       ],
       "ToBuildDependencies": [
         8,
-        847
+        846
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 848
+      "DebugActionIndex": 847
     },
     {
       "Annotation": "Compile UnityClassRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityClassRegistration.o",
@@ -28644,11 +28622,11 @@
         2
       ],
       "ToBuildDependencies": [
-        848
+        847
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 849
+      "DebugActionIndex": 848
     },
     {
       "Annotation": "ICallRegistrationGenerator C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/artifacts/Android/il2cppOutput/UnityICallRegistration.cpp",
@@ -28719,7 +28697,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 850
+      "DebugActionIndex": 849
     },
     {
       "Annotation": "Compile UnityICallRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityICallRegistration.o",
@@ -28742,11 +28720,11 @@
         2
       ],
       "ToBuildDependencies": [
-        850
+        849
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 851
+      "DebugActionIndex": 850
     },
     {
       "Annotation": "Link libunity Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so",
@@ -28775,12 +28753,12 @@
         2
       ],
       "ToBuildDependencies": [
-        849,
-        851
+        848,
+        850
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 852
+      "DebugActionIndex": 851
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so",
@@ -28801,11 +28779,11 @@
         2
       ],
       "ToBuildDependencies": [
-        852
+        851
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 853
+      "DebugActionIndex": 852
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so",
@@ -28826,11 +28804,11 @@
         2
       ],
       "ToBuildDependencies": [
-        853
+        852
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 854
+      "DebugActionIndex": 853
     },
     {
       "Annotation": "Stripping Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so -> Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so",
@@ -28851,11 +28829,11 @@
         2
       ],
       "ToBuildDependencies": [
-        852
+        851
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 855
+      "DebugActionIndex": 854
     },
     {
       "Annotation": "Adding note Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so -> C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so",
@@ -28880,12 +28858,12 @@
         10
       ],
       "ToBuildDependencies": [
-        854,
-        855
+        853,
+        854
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 856
+      "DebugActionIndex": 855
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libmain.so",
@@ -28903,7 +28881,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 857
+      "DebugActionIndex": 856
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libil2cpp.so",
@@ -28924,7 +28902,7 @@
       "ToBuildDependencies": [
         509
       ],
-      "DebugActionIndex": 858
+      "DebugActionIndex": 857
     },
     {
       "Annotation": "CopyFiles C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libunity.so",
@@ -28943,9 +28921,9 @@
         10
       ],
       "ToBuildDependencies": [
-        854
+        853
       ],
-      "DebugActionIndex": 859
+      "DebugActionIndex": 858
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/unity_app_guid_ikly.info",
@@ -28962,7 +28940,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 860
+      "DebugActionIndex": 859
     },
     {
       "Annotation": "GuidGenerator C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity_app_guid",
@@ -29015,11 +28993,11 @@
       "ToBuildDependencies": [
         5,
         79,
-        860
+        859
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 861
+      "DebugActionIndex": 860
     },
     {
       "Annotation": "WriteText C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/resources/META-INF/com.android.games.engine.build_fingerprint",
@@ -29036,7 +29014,7 @@
       "OutputFlags": [
         10
       ],
-      "DebugActionIndex": 862
+      "DebugActionIndex": 861
     },
     {
       "Annotation": "ModifyAndroidProjectCallback C:/Users/gusta/OneDrive/Documentos/GitHub/Ragdoll/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/AndroidManifest.xml (+8 others)",
@@ -29119,12 +29097,12 @@
         0
       ],
       "ToBuildDependencies": [
+        819,
         820,
         821,
-        822,
-        824
+        823
       ],
-      "DebugActionIndex": 863
+      "DebugActionIndex": 862
     },
     {
       "Annotation": "Player",
@@ -29477,10 +29455,10 @@
         815,
         816,
         817,
-        818,
+        819,
         820,
         821,
-        822,
+        823,
         824,
         825,
         826,
@@ -29502,13 +29480,12 @@
         842,
         843,
         844,
-        845,
-        856,
+        855,
+        860,
         861,
-        862,
-        863
+        862
       ],
-      "DebugActionIndex": 864
+      "DebugActionIndex": 863
     }
   ],
   "FileSignatures": [
@@ -30073,8 +30050,8 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "SourceBuildPlayerFiles": 846,
-          "Player": 864
+          "SourceBuildPlayerFiles": 845,
+          "Player": 863
         }
 ,  "DefaultNodes": [
     0

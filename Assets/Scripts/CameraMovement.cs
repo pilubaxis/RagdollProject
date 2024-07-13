@@ -17,6 +17,7 @@ public class CameraMovement : MonoBehaviour
     private Vector3 targetPosition;
     private Vector3 cameraLocalPos;
     private Camera camera;
+    private float currentZoom = 0;
 
     private void Start()
     {
@@ -26,7 +27,11 @@ public class CameraMovement : MonoBehaviour
 
     private void Update()
     {
-        ZoomIn(zoom, zoomIntensity);
+        ZoomIn(currentZoom, zoomIntensity);
+        if (currentZoom != zoom)
+        {
+            currentZoom = Mathf.Lerp(currentZoom, zoom, 0.1f);
+        }
     }
 
     private void LateUpdate()

@@ -1,7 +1,9 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="Billboard" preserve="nothing"/>
 		<type fullname="BodyContainer" preserve="nothing"/>
 		<type fullname="CameraMovement" preserve="nothing"/>
+		<type fullname="ColorOptionUI" preserve="nothing"/>
 		<type fullname="EnemyRagdoll" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>
 		<type fullname="Hit" preserve="nothing"/>
@@ -9,7 +11,10 @@
 		<type fullname="PlayerEconomy" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
 		<type fullname="PlayerThrow" preserve="nothing"/>
+		<type fullname="PlayerUpgrader" preserve="nothing"/>
 		<type fullname="RagdollStackableObject" preserve="nothing"/>
+		<type fullname="ShopManager" preserve="nothing"/>
+		<type fullname="ShopUI" preserve="nothing"/>
 		<type fullname="StackObjectsManager" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
@@ -89,9 +94,13 @@
 	<assembly fullname="UnityEngine.UI">
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
 		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.AspectRatioFitter" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GridLayoutGroup" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="nothing"/>
 	</assembly>
 </linker>

@@ -44,7 +44,7 @@ public class StackableObject : MonoBehaviour
 
         if (player == null)
         {
-            player = GameManager.instance.player;
+            player = GameManager.Instance.player;
         }
     }
 
@@ -60,6 +60,11 @@ public class StackableObject : MonoBehaviour
 
                     if (timerAvailable >= timeToStack)
                     {
+                        if (player.GetComponent<StackObjectsManager>().checkIfStackIsFull())
+                        {
+                            timerAvailable = 0;
+                            return;
+                        }
                         //Adding to stack
                         WhenStack();
                         //Player ref
@@ -111,7 +116,7 @@ public class StackableObject : MonoBehaviour
             doWhenDisposed.Invoke();
         }
         state = StackableObjectState.Disposed;
-        player.GetComponent<PlayerEconomy>().AddCoin(money);
+        player.GetComponent<PlayerEconomy>().ManageCoin(money);
     }
 
     public void WhenAvailable()
@@ -129,7 +134,7 @@ public class StackableObject : MonoBehaviour
         {
             // Lerp towards the target position in the y-axis only
             Vector3 newYPosition = new Vector3(currentPosition.x, targetPos.y, currentPosition.z);
-            Vector3 lerpedPosition = Vector3.Lerp(currentPosition, newYPosition, lerpDelay * Time.deltaTime);
+            Vector3 lerpedPosition = Vector3.Lerp(currentPosition, newYPosition, lerpDelay/2 * Time.deltaTime);
             rb.MovePosition(lerpedPosition);
         }
         else

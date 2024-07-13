@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class StackObjectsManager : MonoBehaviour
 {
+    public int stackLimit = 3;
     // Stack of objects
     [SerializeField] private Stack<StackableObject> stackObjects = new Stack<StackableObject>();
 
@@ -16,6 +17,7 @@ public class StackObjectsManager : MonoBehaviour
     [SerializeField] private float yOffset = 1.0f;
 
     [SerializeField] private Transform stackTransform = null;
+    [SerializeField] private CameraMovement camMov;
 
     private Vector3 lastPosition;
 
@@ -28,7 +30,6 @@ public class StackObjectsManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (stackObjects.Count > 0)
@@ -48,10 +49,16 @@ public class StackObjectsManager : MonoBehaviour
     public void AddToStack(StackableObject obj)
     {
         stackObjects.Push(obj);
+
+        //change zoom camera
+        camMov.zoom = Math.Clamp((stackObjects.Count - 5) * 0.1f, 0f , 1f);
     }
 
     public StackableObject RemoveFromStack()
     {
+        //change zoom camera
+        camMov.zoom = Math.Clamp((stackObjects.Count - 5) * 0.1f, 0f, 1f);
+
         StackableObject obj = stackObjects.Pop();
         obj.state = StackableObject.StackableObjectState.Thrown;
         return obj;
@@ -60,6 +67,11 @@ public class StackObjectsManager : MonoBehaviour
     public StackableObject CheckNextFromStack()
     {
         return stackObjects.Peek();
+    }
+
+    public bool checkIfStackIsFull()
+    {
+        return stackObjects.Count >= stackLimit;
     }
 
     public void MoveStackObjects()

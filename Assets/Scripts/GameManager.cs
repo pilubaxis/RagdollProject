@@ -6,18 +6,33 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance = null;
+    public static GameManager Instance = null;
 
     public Transform player = null;
+
+    public List<ShopManager> shops = new List<ShopManager>();
 
     [Header("Canvas")]
     public TextMeshProUGUI coinsText = null;
 
     void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else if (instance != this)
+        if (Instance == null)
+            Instance = this;
+        else if (Instance != this)
             Destroy(gameObject);
+    }
+
+    public ShopManager CheckStoreAvailable()
+    {
+        ShopManager available = null;
+        for (int i = 0; i < shops.Count; i++)
+        {
+            if (shops[i].IsShopActive())
+            {
+                available = shops[i];
+            }
+        }
+        return available;
     }
 }

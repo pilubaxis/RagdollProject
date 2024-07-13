@@ -9,5 +9,13 @@
 		<type fullname="PlayerThrow">
 			<method name="OnThrow"/>
 		</type>
+		<type fullname="ShopUI">
+			<method name="AddNewStack"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+		</type>
 	</assembly>
 </linker>

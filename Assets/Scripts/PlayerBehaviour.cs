@@ -67,6 +67,12 @@ public class PlayerBehaviour : CharacterBehaviour
 
     public void OnHit(InputAction.CallbackContext context)
     {
+        ShopManager shop = GameManager.Instance.CheckStoreAvailable();
+        if (shop)
+        {
+            shop.OpenStoreUI(true);
+            return;
+        }
         if (context.started)
         {
             currentState = State.Hit;
