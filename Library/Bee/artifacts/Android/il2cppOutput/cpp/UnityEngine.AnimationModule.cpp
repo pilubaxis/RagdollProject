@@ -738,6 +738,9 @@ inline intptr_t MarshalledUnityObject_MarshalNullCheck_TisAnimator_t8A52E42AE54F
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_GetAnimatorStateInfo_Injected_m2BC6D45B860E8FA3653AF66051A72786AA898DF8 (intptr_t ___0__unity_self, int32_t ___1_layerIndex, int32_t ___2_stateInfoIndex, AnimatorStateInfo_t1F47379289C7CE7FD588FBC3BBD79A777243B6B2* ___3_info, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_GetAnimatorStateInfo_mC6C046A539DE6E8D481E830D3DA1FBF96DFC367D (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_layerIndex, int32_t ___1_stateInfoIndex, AnimatorStateInfo_t1F47379289C7CE7FD588FBC3BBD79A777243B6B2* ___2_info, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m5565F093F0752D4DD9B451686F71C7A8F23F6744 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_stateName, int32_t ___1_layer, float ___2_normalizedTime, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m3011727F1A3F331EE7F5D7CF9B98EFEADE547BBD (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_stateNameHash, int32_t ___1_layer, float ___2_normalizedTime, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_Injected_m9E85E31420EFCDC66D1244A0B58C589E6487B6FF (intptr_t ___0__unity_self, int32_t ___1_stateNameHash, int32_t ___2_layer, float ___3_normalizedTime, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_get_hasBoundPlayables_Injected_mD45F2A48DBD6AC97C94C15BE92005D6BDE362054 (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetBoolString_Injected_m7441082A8EEE488A3E000B6BBAE70730942E00E2 (intptr_t ___0__unity_self, String_t* ___1_name, bool ___2_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTriggerString_Injected_m9F1C199AB55B0A361AAACD2678CD066E851BB0DC (intptr_t ___0__unity_self, String_t* ___1_name, const RuntimeMethod* method) ;
@@ -1626,6 +1629,50 @@ IL_0010:
 		return L_2;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_stateName, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	int32_t V_1 = 0;
+	{
+		V_0 = (-std::numeric_limits<float>::infinity());
+		V_1 = (-1);
+		String_t* L_0 = ___0_stateName;
+		int32_t L_1 = V_1;
+		float L_2 = V_0;
+		Animator_Play_m5565F093F0752D4DD9B451686F71C7A8F23F6744(__this, L_0, L_1, L_2, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m5565F093F0752D4DD9B451686F71C7A8F23F6744 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_stateName, int32_t ___1_layer, float ___2_normalizedTime, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_stateName;
+		int32_t L_1;
+		L_1 = Animator_StringToHash_mD67B872C411BE37641F49D7AA1DBD45B67F63E3A(L_0, NULL);
+		int32_t L_2 = ___1_layer;
+		float L_3 = ___2_normalizedTime;
+		Animator_Play_m3011727F1A3F331EE7F5D7CF9B98EFEADE547BBD(__this, L_1, L_2, L_3, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m3011727F1A3F331EE7F5D7CF9B98EFEADE547BBD (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_stateNameHash, int32_t ___1_layer, float ___2_normalizedTime, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarshalledUnityObject_MarshalNullCheck_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m28FD7D125DDABB43B366875DD0B3A7680547AA7B_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		intptr_t L_0;
+		L_0 = MarshalledUnityObject_MarshalNullCheck_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m28FD7D125DDABB43B366875DD0B3A7680547AA7B_inline(__this, MarshalledUnityObject_MarshalNullCheck_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m28FD7D125DDABB43B366875DD0B3A7680547AA7B_RuntimeMethod_var);
+		int32_t L_1 = ___0_stateNameHash;
+		int32_t L_2 = ___1_layer;
+		float L_3 = ___2_normalizedTime;
+		Animator_Play_Injected_m9E85E31420EFCDC66D1244A0B58C589E6487B6FF(L_0, L_1, L_2, L_3, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_get_hasBoundPlayables_mA5A6132C03593851FE80D8E7490191E051E5A1C9 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1707,6 +1754,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_GetAnimatorStateInfo_Injected_m
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Animator_GetAnimatorStateInfo_Injected_m2BC6D45B860E8FA3653AF66051A72786AA898DF8_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::GetAnimatorStateInfo_Injected(System.IntPtr,System.Int32,UnityEngine.StateInfoIndex,UnityEngine.AnimatorStateInfo&)");
 	_il2cpp_icall_func(___0__unity_self, ___1_layerIndex, ___2_stateInfoIndex, ___3_info);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_Injected_m9E85E31420EFCDC66D1244A0B58C589E6487B6FF (intptr_t ___0__unity_self, int32_t ___1_stateNameHash, int32_t ___2_layer, float ___3_normalizedTime, const RuntimeMethod* method) 
+{
+	typedef void (*Animator_Play_Injected_m9E85E31420EFCDC66D1244A0B58C589E6487B6FF_ftn) (intptr_t, int32_t, int32_t, float);
+	static Animator_Play_Injected_m9E85E31420EFCDC66D1244A0B58C589E6487B6FF_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animator_Play_Injected_m9E85E31420EFCDC66D1244A0B58C589E6487B6FF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::Play_Injected(System.IntPtr,System.Int32,System.Int32,System.Single)");
+	_il2cpp_icall_func(___0__unity_self, ___1_stateNameHash, ___2_layer, ___3_normalizedTime);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animator_get_hasBoundPlayables_Injected_mD45F2A48DBD6AC97C94C15BE92005D6BDE362054 (intptr_t ___0__unity_self, const RuntimeMethod* method) 
 {

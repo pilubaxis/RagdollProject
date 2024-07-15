@@ -19,10 +19,21 @@ public class StackableObject : MonoBehaviour
     //The period of time that the player needs to stay in range to stack 
     [SerializeField] private float timeToStack = 1f;
 
+    public Vector3 rotationOffset;
+
+    [Header("Conditions to Available")]
+
     // the period of time that the objects need to be available again
     [SerializeField] private float timeToBeAvailable = 2f;
 
-    [SerializeField] private Vector3 rotationOffset;
+    [Header("Disposed")]
+    [SerializeField] private float timeToValidateDispoed = 1f;
+
+    [Header("Going to stack")]
+    [SerializeField] float goingToStackSpeed = 7f;
+    public float moveDelay = 1f;
+
+    public Vector3 previousPosition;
 
     public UnityAction doWhenStack = null;
     public UnityAction doWhenThrow = null;
@@ -32,7 +43,11 @@ public class StackableObject : MonoBehaviour
 
     private float timerAvailable = 0;
     private float timerThrown = 0;
+    private float timerDisposed = 0;
     private Transform player = null;
+    private int moneyToGetWhenExplode = 0;
+
+    private bool isDisposed = false;
     protected void Start()
     {
         if (objectTransform == null)
@@ -56,7 +71,10 @@ public class StackableObject : MonoBehaviour
             case StackableObjectState.Available:
                 if (GetDistanceFromPlayer() <= playerDistanceToStack)
                 {
-                    timerAvailable += Time.deltaTime;
+                    if (!player.GetComponent<StackObjectsManager>().checkIfStackIsFull())
+                    {
+                        timerAvailable += Time.deltaTime;
+                    }
 
                     if (timerAvailable >= timeToStack)
                     {
@@ -85,7 +103,25 @@ public class StackableObject : MonoBehaviour
                     WhenAvailable();
                 }
                 break;
+            case StackableObjectState.Disposed:
+                if (isDisposed)
+                {
+                    timerDisposed += Time.deltaTime;
+
+                    if (timerDisposed >= timeToValidateDispoed)
+                    {
+                        player.GetComponent<PlayerEconomy>().ManageCoin(moneyToGetWhenExplode);
+                        Destroy(gameObject);
+                    }
+                }
+                break;
         }
+    }
+
+    public void WhenAvailable()
+    {
+        state = StackableObjectState.Available;
+        timerThrown = 0;
     }
 
     public void WhenStack()
@@ -115,44 +151,51 @@ public class StackableObject : MonoBehaviour
         {
             doWhenDisposed.Invoke();
         }
+        moneyToGetWhenExplode = money;
+        isDisposed = true;
         state = StackableObjectState.Disposed;
-        player.GetComponent<PlayerEconomy>().ManageCoin(money);
     }
 
-    public void WhenAvailable()
-    {
-        state = StackableObjectState.Available;
-        timerThrown = 0;
-    }
-
-    public void UpdateStackObjectPosition(Vector3 targetPos, float lerpDelay)
+    public void UpdateStackObjectPosition(Vector3 targetPos, float rate)
     {
         Vector3 currentPosition = rb.position;
 
-        // Move only in the y-axis until it's close to the yThreshold
-        if (Mathf.Abs(currentPosition.y - targetPos.y) > 1f)
+        if (Mathf.Abs(currentPosition.y - targetPos.y) > 0.5f)
         {
-            // Lerp towards the target position in the y-axis only
             Vector3 newYPosition = new Vector3(currentPosition.x, targetPos.y, currentPosition.z);
-            Vector3 lerpedPosition = Vector3.Lerp(currentPosition, newYPosition, lerpDelay/2 * Time.deltaTime);
-            rb.MovePosition(lerpedPosition);
+            Vector3 newPos = Vector3.MoveTowards(currentPosition, newYPosition, goingToStackSpeed * Time.deltaTime);
+            rb.MovePosition(newPos);
         }
         else
         {
-            // Lerp towards the target position in all axes
-            Vector3 newPosition = Vector3.Lerp(currentPosition, targetPos, lerpDelay * Time.deltaTime);
-            rb.MovePosition(newPosition);
+            Vector3 newPos = Vector3.MoveTowards(rb.position, targetPos, goingToStackSpeed/4 * Time.deltaTime);
+
+            if (state == StackableObjectState.GoingToStack)
+            {
+                rb.MovePosition(newPos);
+                if (Vector3.Distance(rb.position, targetPos) < 0.01f)
+                {
+                    state = StackableObjectState.Stacked;
+                }
+            }
+            else if (state == StackableObjectState.Stacked)
+            {
+                rb.MovePosition(Vector3.Lerp(currentPosition, targetPos, rate));
+            }
+
         }
     }
 
-    public void UpdateStackObjectRotation(Vector3 targetDirection, float lerpSpeedRot)
+    public void UpdateStackObjectRotation(Vector3 targetDirection, Vector3 delta, float lerpSpeedRot)
     {
         Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
-        targetRotation *= Quaternion.Euler(rotationOffset);
+        targetRotation *= Quaternion.Euler(delta);
+
+        targetRotation *= Quaternion.Euler( rotationOffset);
 
         Quaternion lerpedRotation = Quaternion.Lerp(rb.rotation, targetRotation, lerpSpeedRot * Time.deltaTime);
 
-    rb.MoveRotation(lerpedRotation);
+        rb.MoveRotation(lerpedRotation);
     }
 
     private float GetDistanceFromPlayer()
@@ -170,6 +213,7 @@ public class StackableObject : MonoBehaviour
     {
         Unavailable,
         Available,
+        GoingToStack,
         Stacked,
         Thrown,
         Disposed

@@ -8,7 +8,7 @@ public class CameraMovement : MonoBehaviour
     public Transform player;
     public float smoothSpeed = 0.125f; 
     public float rotationSpeed = 5.0f;
-    [Range(0,1)]public float zoom = 1f;
+    public float zoom = 1f;
     [SerializeField] private float zoomIntensity = 1f;
 
     public Vector2 deadZoneSize = new Vector2(2f, 2f);
@@ -55,7 +55,7 @@ public class CameraMovement : MonoBehaviour
 
     public void ZoomIn(float percentage, float zoomIntensity)
     {
-        percentage = Mathf.Clamp01(percentage);
+        percentage = Mathf.Clamp(percentage, 0f, 1.4f);
 
         Vector3 dir = camera.transform.localPosition.normalized;
 

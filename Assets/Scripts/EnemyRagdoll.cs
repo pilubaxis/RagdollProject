@@ -9,12 +9,23 @@ public class EnemyRagdoll : MonoBehaviour
     private CapsuleCollider hitColliderDetector = null;
     private Animator animator;
     private RagdollStackableObject ragdollStackableObject = null;
+    [SerializeField] private string[] animationStates;
+    [SerializeField] private bool startAsRagdoll = false;
+
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         hitColliderDetector = GetComponent<CapsuleCollider>();
         ragdollStackableObject = GetComponent<RagdollStackableObject>();
+        transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
+
+        PlayRandomAnimation();
+
+        if (startAsRagdoll)
+        {
+            ActivateRagdoll(true, Vector3.zero);
+        }
     }
     public void ActivateRagdoll(bool activate, Vector3 dir)
     {
@@ -24,5 +35,17 @@ public class EnemyRagdoll : MonoBehaviour
         stackableObject.enabled = activate;
 
         bodyToReciveForce.AddForce(dir, ForceMode.Impulse);
+    }
+
+    public void PlayRandomAnimation()
+    {
+        if (animationStates.Length == 0)
+        {
+            return;
+        }
+        int randomIndex = Random.Range(0, animationStates.Length);
+        string randomAnimation = animationStates[randomIndex];
+
+        animator.Play(randomAnimation);
     }
 }

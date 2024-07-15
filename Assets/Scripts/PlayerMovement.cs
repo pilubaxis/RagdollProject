@@ -44,24 +44,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Get the camera's forward and right vectors
         Vector3 forward = cameraTransform.forward;
         Vector3 right = cameraTransform.right;
 
-        // Project forward and right vectors onto the horizontal plane (y = 0)
         forward.y = 0f;
         right.y = 0f;
         forward.Normalize();
         right.Normalize();
 
-        // Calculate the desired move direction based on camera orientation
         Vector3 moveDirection = (forward * moveInput.y + right * moveInput.x).normalized;
 
-        // Move the player
         Vector3 move = moveDirection * moveSpeed * (playerBehaviour.isHitting ? moveSpeedFactorWhenHit : 1) * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + move);
 
-        // Rotate the player model to face the move direction if there is any input
         if (moveDirection != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);

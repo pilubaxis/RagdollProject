@@ -8,6 +8,7 @@ public class BodyContainer : MonoBehaviour
 {
     [SerializeField] private int coinContainerValue = 1;
     [SerializeField] private TextMeshProUGUI coinText = null;
+
     void Start()
     {
         coinText.text = "x" + coinContainerValue.ToString();

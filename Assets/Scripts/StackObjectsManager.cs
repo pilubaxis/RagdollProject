@@ -19,6 +19,9 @@ public class StackObjectsManager : MonoBehaviour
     [SerializeField] private Transform stackTransform = null;
     [SerializeField] private CameraMovement camMov;
 
+    [SerializeField] private float inertiaIntensity = 2;
+    [SerializeField] private float rotInertiaIntensity = 2;
+
     private Vector3 lastPosition;
 
 
@@ -30,7 +33,7 @@ public class StackObjectsManager : MonoBehaviour
         }
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (stackObjects.Count > 0)
         {
@@ -51,13 +54,13 @@ public class StackObjectsManager : MonoBehaviour
         stackObjects.Push(obj);
 
         //change zoom camera
-        camMov.zoom = Math.Clamp((stackObjects.Count - 5) * 0.1f, 0f , 1f);
+        camMov.zoom = Math.Clamp((stackObjects.Count - 2) * 0.1f, 0f , 1f);
     }
 
     public StackableObject RemoveFromStack()
     {
         //change zoom camera
-        camMov.zoom = Math.Clamp((stackObjects.Count - 5) * 0.1f, 0f, 1f);
+        camMov.zoom = Math.Clamp((stackObjects.Count - 2) * 0.1f, 0f, 1f);
 
         StackableObject obj = stackObjects.Pop();
         obj.state = StackableObject.StackableObjectState.Thrown;
@@ -81,25 +84,27 @@ public class StackObjectsManager : MonoBehaviour
 
         for (int i = 0; i < stackArray.Length; i++)
         {
-
+            //Position
             StackableObject obj = stackArray[i];
-            StackableObject lastObj = i > 0 ? stackArray[i - 1] : null;
-            Vector3 position = stackTransform.position + new Vector3(0, i * yOffset, 0); 
+            Vector3 yHeight = new Vector3(0, i * yOffset, 0);
+            float rate = lerpSpeedPos * (1 + i * inertiaIntensity);
+            Vector3 lastObjPos = i == 0 ? stackTransform.position : stackArray[i - 1].objectTransform.position + new Vector3(0, yOffset, 0);
 
-            obj.UpdateStackObjectPosition(position, lerpSpeedPos * (stackArray.Length - i + 1));
+            obj.UpdateStackObjectPosition(lastObjPos, rate);
+
+            //Rotation
+
+            //coeficient to rotate the desire angle to rotate
+            Vector2 deltaXZ = new Vector2(obj.objectTransform.position.x - lastObjPos.x, obj.objectTransform.position.z - lastObjPos.z);
+
+            Vector3 rot = new Vector3( deltaXZ.y * rotInertiaIntensity, 0, -deltaXZ.x * rotInertiaIntensity);
 
 
-            if (lastObj != null)
-            {
-                Vector3 dir = (lastObj.objectTransform.position - obj.objectTransform.position).normalized;
-                //obj.UpdateStackObjectRotation(dir, lerpSpeedRot);
-                obj.UpdateStackObjectRotation(Vector3.down, lerpSpeedRot);
-            }
-            else
-            {
-                obj.UpdateStackObjectRotation(Vector3.down, lerpSpeedRot);
-            }
+
+            obj.UpdateStackObjectRotation(Vector3.forward, rot, lerpSpeedRot);
         }
+
+
     }
     #endregion
 

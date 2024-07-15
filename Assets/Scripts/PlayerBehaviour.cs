@@ -41,6 +41,7 @@ public class PlayerBehaviour : CharacterBehaviour
                     if (GetCurrentAnimationName() != "Hit")
                     {
                         currentState = playerMov.isMoving ? State.Walk : State.Idle;
+                        animator.SetBool("Run", playerMov.isMoving);
                     }
                     animationCheckInProgress = false;
                     animationCheckTimer = 0f;

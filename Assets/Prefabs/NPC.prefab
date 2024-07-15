@@ -45,10 +45,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e965d6fbc7c5e4b9771f31b541fbe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 1
   objectTransform: {fileID: 1035105358040092595}
-  lerpSpeedGoToStack: 4
+  lerpSpeedGoToStack: 3
   playerDistanceToStack: 1.5
   timeToStack: 1
+  rotationOffset: {x: 0, y: 0, z: 0}
+  timeToBeAvailable: 2
+  timeToValidateDispoed: 1
+  goingToStackSpeed: 4
+  moveDelay: 1
+  previousPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &2230056712162881463
 PrefabInstance:
   m_ObjectHideFlags: 0

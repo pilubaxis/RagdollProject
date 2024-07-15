@@ -10,8 +10,13 @@ public class PlayerThrow : MonoBehaviour
     [SerializeField] private float maxForceMagnitude = 15;
     [SerializeField] private float forceIncreaseRate = 1f;
     [SerializeField] private float yIncrease = 1f;
+    [Header("Line Renderer")]
     [SerializeField] private LineRenderer forceLine = null;
+    [SerializeField] private Gradient colorLineWhenChargeThrow = null;
+    [SerializeField] private Gradient colorLineDisable = null;
     [SerializeField] private float rotationImpulseIntensity = 4f;
+
+    public GameObject throwButton = null;
 
     private float currentForceMagnitude;
     private bool isIncreasingForce = false;
@@ -35,9 +40,18 @@ public class PlayerThrow : MonoBehaviour
         if (isIncreasingForce)
         {
             IncreaseForceMagnitude();
+        }
+
+        if (!stackObjectsManager.CheckStackIsEmpty())
+        {
+            UpdateLineRenderer(true, isIncreasingForce);
             UpdateForceDirection();
-            UpdateLineRenderer(true);
-            Debug.DrawRay(transform.position, forceDirection * currentForceMagnitude, Color.red);
+            throwButton.SetActive(true);
+        }
+        else
+        { 
+            UpdateLineRenderer(false,false);
+            throwButton.SetActive(false);
         }
     }
 
@@ -53,16 +67,23 @@ public class PlayerThrow : MonoBehaviour
         forceDirection = new Vector3(playerDirection.x, playerDirection.y + yIncrease, playerDirection.z).normalized;
     }
 
-    private void UpdateLineRenderer(bool show)
+    private void UpdateLineRenderer(bool active, bool isThrowing)
     {
-        forceLine.gameObject.SetActive(show);
+        // show line
+        forceLine.gameObject.SetActive(active);
 
-        if (!stackObjectsManager.CheckStackIsEmpty())
+        if (active)
         {
             Transform obj = stackObjectsManager.CheckNextFromStack().objectTransform;
             forceLine.SetPosition(0, obj.transform.position);
-            Vector3 endPoint = obj.transform.position + forceDirection * currentForceMagnitude;
+            Vector3 endPoint = isThrowing ? 
+                obj.transform.position + forceDirection * currentForceMagnitude :
+                obj.transform.position + forceDirection * minForceMagnitude
+                ;
             forceLine.SetPosition(1, endPoint);
+
+            // line color
+            forceLine.colorGradient = isThrowing ? colorLineWhenChargeThrow : colorLineDisable;
         }
     }
 
@@ -81,7 +102,6 @@ public class PlayerThrow : MonoBehaviour
             ExecuteThrow(obj.objectTransform.GetComponent<Rigidbody>());
             isIncreasingForce = false;
             currentForceMagnitude = minForceMagnitude;
-            UpdateLineRenderer(false);
         }
     }
 

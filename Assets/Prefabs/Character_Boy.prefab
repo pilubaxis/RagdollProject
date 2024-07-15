@@ -67,7 +67,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: b0cff7b533a10ff41a459c36e4d9cb68, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 5649934673e113e4fa242c041c38edaf, type: 2}
+      objectReference: {fileID: 9100000, guid: 3e85a88af1bac644dae68d0df91f9b5d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -779,6 +779,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyToReciveForce: {fileID: 1592342505244451476}
   stackableObject: {fileID: 0}
+  animationStates:
+  - Dance
+  - Dance1
+  - Dance2
+  startAsRagdoll: 0
 --- !u!114 &3915336436082995290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,11 +798,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   objectTransform: {fileID: 389614878003041052}
-  lerpSpeedGoToStack: 4
+  lerpSpeedGoToStack: 8
   playerDistanceToStack: 2
   timeToStack: 0.3
+  rotationOffset: {x: 90, y: 0, z: 0}
   timeToBeAvailable: 2
-  rotationOffset: {x: 0, y: 0, z: 0}
+  timeToValidateDispoed: 2
+  goingToStackSpeed: 15
+  moveDelay: 1
+  previousPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5525346511644153381 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9070493210130169274, guid: b0cff7b533a10ff41a459c36e4d9cb68, type: 3}

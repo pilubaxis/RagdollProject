@@ -814,6 +814,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animator_GetAnimatorStateInfo_Injected();
 		Register_UnityEngine_Animator_GetAnimatorStateInfo_Injected();
 
+		//System.Void UnityEngine.Animator::Play_Injected(System.IntPtr,System.Int32,System.Int32,System.Single)
+		void Register_UnityEngine_Animator_Play_Injected();
+		Register_UnityEngine_Animator_Play_Injected();
+
 		//System.Void UnityEngine.Animator::ResetTriggerString_Injected(System.IntPtr,System.String)
 		void Register_UnityEngine_Animator_ResetTriggerString_Injected();
 		Register_UnityEngine_Animator_ResetTriggerString_Injected();
@@ -1325,10 +1329,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int32 UnityEngine.Debug::ExtractStackTraceNoAlloc(System.Byte*,System.Int32,System.String)
 		void Register_UnityEngine_Debug_ExtractStackTraceNoAlloc();
 		Register_UnityEngine_Debug_ExtractStackTraceNoAlloc();
-
-		//System.Void UnityEngine.Debug::DrawLine_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Color&,System.Single,System.Boolean)
-		void Register_UnityEngine_Debug_DrawLine_Injected();
-		Register_UnityEngine_Debug_DrawLine_Injected();
 
 	//End Registrations for type : UnityEngine.Debug
 
@@ -2278,6 +2278,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.LineRenderer
 
+		//System.Void UnityEngine.LineRenderer::SetColorGradient_Injected(System.IntPtr,UnityEngine.Gradient)
+		void Register_UnityEngine_LineRenderer_SetColorGradient_Injected();
+		Register_UnityEngine_LineRenderer_SetColorGradient_Injected();
+
 		//System.Void UnityEngine.LineRenderer::SetPosition_Injected(System.IntPtr,System.Int32,UnityEngine.Vector3&)
 		void Register_UnityEngine_LineRenderer_SetPosition_Injected();
 		Register_UnityEngine_LineRenderer_SetPosition_Injected();
@@ -2889,6 +2893,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.Quaternion
 
 	//Start Registrations for type : UnityEngine.Random
+
+		//System.Int32 UnityEngine.Random::RandomRangeInt(System.Int32,System.Int32)
+		void Register_UnityEngine_Random_RandomRangeInt();
+		Register_UnityEngine_Random_RandomRangeInt();
 
 		//System.Single UnityEngine.Random::Range(System.Single,System.Single)
 		void Register_UnityEngine_Random_Range();
